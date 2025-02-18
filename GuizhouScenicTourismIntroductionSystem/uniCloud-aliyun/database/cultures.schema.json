@@ -1,0 +1,57 @@
+{
+	"bsonType": "object",
+	"required": ["name", "description", "category", "created_at"],
+	"permission": {
+		"read": true,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"name": {
+			"bsonType": "string",
+			"description": "文化名称",
+			"minLength": 1,
+			"maxLength": 100
+		},
+		"description": {
+			"bsonType": "string",
+			"description": "文化介绍",
+			"minLength": 1
+		},
+		"category": {
+			"bsonType": "int",
+			"description": "文化分类：0-民族文化，1-历史文化，2-饮食文化，3-节日文化，4-其他",
+			"minimum": 0,
+			"maximum": 4
+		},
+		"images": {
+			"bsonType": "array",
+			"description": "相关图片",
+			"items": {
+				"bsonType": "string",
+				"description": "图片URL"
+			}
+		},
+		"tags": {
+			"bsonType": "array",
+			"description": "文化标签",
+			"items": {
+				"bsonType": "string",
+				"description": "标签名称"
+			}
+		},
+		"views": {
+			"bsonType": "int",
+			"description": "浏览量",
+			"minimum": 0
+		},
+		"created_at": {
+			"bsonType": "timestamp",
+			"description": "创建时间"
+		}
+	}
+} 

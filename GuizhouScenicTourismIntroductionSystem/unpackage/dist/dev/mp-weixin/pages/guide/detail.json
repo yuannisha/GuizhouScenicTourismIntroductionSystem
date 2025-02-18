@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "攻略详情",
+  "usingComponents": {
+    "review-popup": "../../components/review-popup/review-popup"
+  }
+}

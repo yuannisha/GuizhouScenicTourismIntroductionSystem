@@ -1,0 +1,54 @@
+{
+	"bsonType": "object",
+	"required": ["user_id", "scenic_id", "booking_date", "ticket_type", "quantity", "total_price", "status", "created_at"],
+	"permission": {
+		"read": true,
+		"create": "auth.uid != null",
+		"update": "auth.uid != null && doc.user_id == auth.uid",
+		"delete": "auth.uid != null && doc.user_id == auth.uid"
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"user_id": {
+			"bsonType": "string",
+			"description": "用户ID"
+		},
+		"scenic_id": {
+			"bsonType": "string",
+			"description": "景点ID"
+		},
+		"booking_date": {
+			"bsonType": "date",
+			"description": "预订日期"
+		},
+		"ticket_type": {
+			"bsonType": "string",
+			"description": "票种类型"
+		},
+		"quantity": {
+			"bsonType": "int",
+			"minimum": 1,
+			"description": "预订数量"
+		},
+		"total_price": {
+			"bsonType": "number",
+			"minimum": 0,
+			"description": "总价"
+		},
+		"status": {
+			"bsonType": "string",
+			"enum": ["pending", "confirmed", "cancelled"],
+			"description": "预订状态：pending-待确认，confirmed-已确认，cancelled-已取消"
+		},
+		"created_at": {
+			"bsonType": "timestamp",
+			"description": "创建时间"
+		},
+		"updated_at": {
+			"bsonType": "timestamp",
+			"description": "更新时间"
+		}
+	}
+} 

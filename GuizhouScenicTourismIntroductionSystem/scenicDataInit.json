@@ -1,0 +1,162 @@
+{
+    "scenics": [
+        {
+            "name": "黄果树瀑布",
+            "description": "亚洲第一大瀑布",
+            "cover": "/static/scenic/huangguoshu.jpg",
+            "price": 180,
+            "location": "贵州省安顺市镇宁布依族苗族自治县",
+            "category": 1,
+            "tags": ["自然风光", "瀑布", "5A景区"],
+            "images": [
+                "/static/scenic/huangguoshu1.jpg",
+                "/static/scenic/huangguoshu2.jpg",
+                "/static/scenic/huangguoshu3.jpg"
+            ],
+            "openingHours": [
+                {"day": "周一至周日", "time": "08:00-17:30"}
+            ],
+            "traffic": [
+                {
+                    "type": "公交",
+                    "description": "乘坐1路公交车到黄果树瀑布站下车"
+                },
+                {
+                    "type": "自驾",
+                    "description": "导航到黄果树瀑布景区即可"
+                }
+            ],
+            "tickets": [
+                {
+                    "name": "成人票",
+                    "price": 180,
+                    "description": "标准门票"
+                },
+                {
+                    "name": "儿童票",
+                    "price": 90,
+                    "description": "1.2-1.5米儿童"
+                }
+            ],
+            "score": 4.8,
+            "created_at": 1645084800000
+        },
+        {
+            "name": "西江千户苗寨",
+            "description": "最大的苗族聚居村寨",
+            "cover": "/static/scenic/xijiang.jpg",
+            "price": 100,
+            "location": "贵州省黔东南苗族侗族自治州雷山县",
+            "category": 3,
+            "tags": ["民族风情", "苗族文化", "5A景区"],
+            "images": [
+                "/static/scenic/xijiang1.jpg",
+                "/static/scenic/xijiang2.jpg",
+                "/static/scenic/xijiang3.jpg"
+            ],
+            "openingHours": [
+                {"day": "周一至周日", "time": "全天开放"}
+            ],
+            "traffic": [
+                {
+                    "type": "汽车",
+                    "description": "从凯里汽车站乘坐专线车直达"
+                }
+            ],
+            "tickets": [
+                {
+                    "name": "成人票",
+                    "price": 100,
+                    "description": "标准门票"
+                }
+            ],
+            "score": 4.9,
+            "created_at": 1645171200000
+        }
+    ],
+    "foods": [
+        {
+            "name": "肠旺面",
+            "description": "贵州特色小吃",
+            "cover": "/static/food/changwangmian.jpg",
+            "price": 15,
+            "location": "贵阳市",
+            "category": 1,
+            "tags": ["面食", "特色小吃"],
+            "images": [
+                "/static/food/changwangmian1.jpg",
+                "/static/food/changwangmian2.jpg"
+            ],
+            "score": 4.5,
+            "created_at": 1645257600000
+        },
+        {
+            "name": "丝娃娃",
+            "description": "贵阳名小吃",
+            "cover": "/static/food/siwawa.jpg",
+            "price": 20,
+            "location": "贵阳市",
+            "category": 1,
+            "tags": ["特色小吃", "传统美食"],
+            "images": [
+                "/static/food/siwawa1.jpg",
+                "/static/food/siwawa2.jpg"
+            ],
+            "score": 4.6,
+            "created_at": 1645344000000
+        }
+    ],
+    "cultures": [
+        {
+            "name": "苗族文化",
+            "description": "多彩的苗族传统文化",
+            "cover": "/static/culture/miao.jpg",
+            "location": "黔东南州",
+            "category": 1,
+            "tags": ["民族文化", "非遗"],
+            "images": [
+                "/static/culture/miao1.jpg",
+                "/static/culture/miao2.jpg"
+            ],
+            "content": "苗族是一个历史悠久的民族，有着丰富的文化传统...",
+            "created_at": 1645430400000
+        },
+        {
+            "name": "侗族文化",
+            "description": "侗族大歌等非物质文化遗产",
+            "cover": "/static/culture/dong.jpg",
+            "location": "黔东南州",
+            "category": 1,
+            "tags": ["民族文化", "非遗"],
+            "images": [
+                "/static/culture/dong1.jpg",
+                "/static/culture/dong2.jpg"
+            ],
+            "content": "侗族是一个具有悠久历史的少数民族，以侗族大歌闻名...",
+            "created_at": 1645516800000
+        }
+    ],
+    "guides": [
+        {
+            "name": "贵州三日游攻略",
+            "description": "打卡贵州必去景点",
+            "cover": "/static/guide/3days.jpg",
+            "tags": ["热门", "精选"],
+            "content": "第一天：游览黄果树瀑布...",
+            "views": 1000,
+            "likes": 50,
+            "created_at": 1645603200000
+        },
+        {
+            "name": "贵州美食攻略",
+            "description": "贵州特色美食打卡",
+            "cover": "/static/guide/food.jpg",
+            "tags": ["美食", "精选"],
+            "content": "贵州美食以酸辣为主...",
+            "views": 800,
+            "likes": 40,
+            "created_at": 1645689600000
+        }
+    ]
+}
+

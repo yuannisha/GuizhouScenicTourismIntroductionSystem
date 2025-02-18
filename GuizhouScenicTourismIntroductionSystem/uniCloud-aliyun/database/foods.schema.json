@@ -1,0 +1,68 @@
+{
+	"bsonType": "object",
+	"required": ["name", "price", "location", "category", "created_at"],
+	"permission": {
+		"read": true,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"name": {
+			"bsonType": "string",
+			"description": "美食名称",
+			"minLength": 1,
+			"maxLength": 100
+		},
+		"price": {
+			"bsonType": "number",
+			"description": "价格",
+			"minimum": 0
+		},
+		"location": {
+			"bsonType": "string",
+			"description": "地理位置",
+			"minLength": 1,
+			"maxLength": 200
+		},
+		"category": {
+			"bsonType": "int",
+			"description": "美食分类",
+			"minimum": 0,
+			"maximum": 4
+		},
+		"images": {
+			"bsonType": "array",
+			"description": "美食图片",
+			"items": {
+				"bsonType": "string",
+				"description": "图片URL"
+			}
+		},
+		"tags": {
+			"bsonType": "array",
+			"description": "美食标签",
+			"items": {
+				"bsonType": "string",
+				"description": "标签名称"
+			}
+		},
+		"description": {
+			"bsonType": "string",
+			"description": "美食介绍"
+		},
+		"score": {
+			"bsonType": "number",
+			"description": "评分",
+			"minimum": 0,
+			"maximum": 5
+		},
+		"created_at": {
+			"bsonType": "timestamp",
+			"description": "创建时间"
+		}
+	}
+} 

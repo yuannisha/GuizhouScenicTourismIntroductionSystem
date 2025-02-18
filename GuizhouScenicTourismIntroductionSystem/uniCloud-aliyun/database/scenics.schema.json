@@ -1,0 +1,126 @@
+{
+	"bsonType": "object",
+	"required": ["name", "price", "location", "category", "created_at"],
+	"permission": {
+		"read": true,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"name": {
+			"bsonType": "string",
+			"description": "景点名称",
+			"minLength": 1,
+			"maxLength": 100
+		},
+		"price": {
+			"bsonType": "number",
+			"description": "门票价格",
+			"minimum": 0
+		},
+		"location": {
+			"bsonType": "string",
+			"description": "地理位置",
+			"minLength": 1,
+			"maxLength": 200
+		},
+		"category": {
+			"bsonType": "int",
+			"description": "景点分类",
+			"minimum": 0,
+			"maximum": 5
+		},
+		"images": {
+			"bsonType": "array",
+			"description": "景点图片",
+			"items": {
+				"bsonType": "string",
+				"description": "图片URL"
+			}
+		},
+		"tags": {
+			"bsonType": "array",
+			"description": "景点标签",
+			"items": {
+				"bsonType": "string",
+				"description": "标签名称"
+			}
+		},
+		"description": {
+			"bsonType": "string",
+			"description": "景点介绍"
+		},
+		"openingHours": {
+			"bsonType": "array",
+			"description": "开放时间",
+			"items": {
+				"bsonType": "object",
+				"required": ["day", "time"],
+				"properties": {
+					"day": {
+						"bsonType": "string",
+						"description": "星期几"
+					},
+					"time": {
+						"bsonType": "string",
+						"description": "开放时间段"
+					}
+				}
+			}
+		},
+		"traffic": {
+			"bsonType": "array",
+			"description": "交通指南",
+			"items": {
+				"bsonType": "object",
+				"required": ["type", "description"],
+				"properties": {
+					"type": {
+						"bsonType": "string",
+						"description": "交通方式"
+					},
+					"description": {
+						"bsonType": "string",
+						"description": "交通说明"
+					}
+				}
+			}
+		},
+		"tickets": {
+			"bsonType": "array",
+			"description": "门票信息",
+			"items": {
+				"bsonType": "object",
+				"required": ["name", "price"],
+				"properties": {
+					"name": {
+						"bsonType": "string",
+						"description": "票种名称"
+					},
+					"price": {
+						"bsonType": "number",
+						"description": "票价"
+					},
+					"description": {
+						"bsonType": "string",
+						"description": "说明"
+					}
+				}
+			}
+		},
+		"score": {
+			"bsonType": "number",
+			"description": "评分",
+			"minimum": 0,
+			"maximum": 5
+		},
+		"created_at": {
+			"bsonType": "timestamp",
+			"description": "创建时间"
+		}
+	}
+} 

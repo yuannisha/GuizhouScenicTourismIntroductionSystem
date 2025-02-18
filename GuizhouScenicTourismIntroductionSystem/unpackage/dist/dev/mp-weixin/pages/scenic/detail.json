@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "景点详情",
+  "usingComponents": {
+    "review-popup": "../../components/review-popup/review-popup",
+    "booking-popup": "../../components/booking-popup/booking-popup"
+  }
+}

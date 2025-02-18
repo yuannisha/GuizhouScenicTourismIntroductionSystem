@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/scenic/list",
+    "pages/scenic/detail",
+    "pages/user/profile",
+    "pages/user/edit",
+    "pages/user/collections",
+    "pages/user/reviews",
+    "pages/user/orders",
+    "pages/food/list",
+    "pages/food/detail",
+    "pages/culture/list",
+    "pages/culture/detail",
+    "pages/guide/list",
+    "pages/guide/detail"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "贵州旅游",
+    "navigationBarBackgroundColor": "#007AFF",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/scenic/list",
+        "text": "景点",
+        "iconPath": "static/tabbar/scenic.png",
+        "selectedIconPath": "static/tabbar/scenic-active.png"
+      },
+      {
+        "pagePath": "pages/user/profile",
+        "text": "我的",
+        "iconPath": "static/tabbar/user.png",
+        "selectedIconPath": "static/tabbar/user-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

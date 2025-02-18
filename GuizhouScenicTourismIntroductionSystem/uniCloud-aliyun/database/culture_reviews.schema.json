@@ -1,0 +1,55 @@
+{
+	"bsonType": "object",
+	"required": ["user_id", "culture_id", "content", "score", "created_at"],
+	"permission": {
+		"read": true,
+		"create": "auth.uid != null",
+		"update": "auth.uid != null && doc.user_id == auth.uid",
+		"delete": "auth.uid != null && doc.user_id == auth.uid"
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"user_id": {
+			"bsonType": "string",
+			"description": "用户ID"
+		},
+		"culture_id": {
+			"bsonType": "string",
+			"description": "文化ID"
+		},
+		"content": {
+			"bsonType": "string",
+			"description": "评论内容",
+			"minLength": 1,
+			"maxLength": 500
+		},
+		"score": {
+			"bsonType": "number",
+			"minimum": 0,
+			"maximum": 5,
+			"description": "评分，0-5分，支持一位小数"
+		},
+		"images": {
+			"bsonType": "array",
+			"description": "评论图片",
+			"items": {
+				"bsonType": "string",
+				"description": "图片URL"
+			}
+		},
+		"nickname": {
+			"bsonType": "string",
+			"description": "用户昵称"
+		},
+		"avatar": {
+			"bsonType": "string",
+			"description": "用户头像"
+		},
+		"created_at": {
+			"bsonType": "timestamp",
+			"description": "创建时间"
+		}
+	}
+} 

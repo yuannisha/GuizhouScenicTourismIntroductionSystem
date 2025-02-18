@@ -1,0 +1,47 @@
+{
+	"bsonType": "object",
+	"required": ["user_id", "scenic_id", "content", "score", "created_at"],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"user_id": {
+			"bsonType": "string",
+			"description": "用户ID"
+		},
+		"scenic_id": {
+			"bsonType": "string",
+			"description": "景点ID"
+		},
+		"content": {
+			"bsonType": "string",
+			"description": "评价内容",
+			"minLength": 1,
+			"maxLength": 500
+		},
+		"score": {
+			"bsonType": "number",
+			"description": "评分",
+			"minimum": 1,
+			"maximum": 5
+		},
+		"images": {
+			"bsonType": "array",
+			"description": "评价图片",
+			"items": {
+				"bsonType": "string",
+				"description": "图片URL"
+			}
+		},
+		"created_at": {
+			"bsonType": "timestamp",
+			"description": "创建时间"
+		}
+	}
+} 

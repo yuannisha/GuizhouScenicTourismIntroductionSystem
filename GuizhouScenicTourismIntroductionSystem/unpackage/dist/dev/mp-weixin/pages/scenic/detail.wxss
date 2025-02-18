@@ -1,0 +1,245 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.scenic-detail-container {
+  min-height: 100vh;
+  padding-bottom: 100rpx;
+  background-color: #f5f5f5;
+}
+.scenic-detail-container .banner {
+  height: 400rpx;
+}
+.scenic-detail-container .banner image {
+  width: 100%;
+  height: 100%;
+}
+.scenic-detail-container .info-section {
+  padding: 30rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.scenic-detail-container .info-section .name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.scenic-detail-container .info-section .name-price .name {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+}
+.scenic-detail-container .info-section .name-price .price {
+  font-size: 32rpx;
+  color: #ff4d4f;
+}
+.scenic-detail-container .info-section .location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.scenic-detail-container .info-section .location .icon {
+  margin-right: 10rpx;
+}
+.scenic-detail-container .info-section .tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.scenic-detail-container .info-section .tags text {
+  padding: 4rpx 12rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+  font-size: 24rpx;
+  color: #007AFF;
+  background-color: rgba(0, 122, 255, 0.1);
+  border-radius: 4rpx;
+}
+.scenic-detail-container .section {
+  padding: 30rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.scenic-detail-container .section .section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+.scenic-detail-container .section .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.scenic-detail-container .section .section-header .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+.scenic-detail-container .section .section-header .score {
+  font-size: 32rpx;
+  color: #ff4d4f;
+}
+.scenic-detail-container .section .time-info .time-item {
+  display: flex;
+  margin-bottom: 10rpx;
+}
+.scenic-detail-container .section .time-info .time-item .day {
+  width: 120rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.scenic-detail-container .section .time-info .time-item .time {
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+}
+.scenic-detail-container .section .traffic-info .traffic-item {
+  margin-bottom: 20rpx;
+}
+.scenic-detail-container .section .traffic-info .traffic-item .type {
+  display: block;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+.scenic-detail-container .section .traffic-info .traffic-item .desc {
+  font-size: 26rpx;
+  color: #666;
+}
+.scenic-detail-container .section .ticket-info .ticket-item {
+  margin-bottom: 20rpx;
+}
+.scenic-detail-container .section .ticket-info .ticket-item .ticket-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.scenic-detail-container .section .ticket-info .ticket-item .ticket-name-price .name {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+}
+.scenic-detail-container .section .ticket-info .ticket-item .ticket-name-price .price {
+  font-size: 28rpx;
+  color: #ff4d4f;
+}
+.scenic-detail-container .section .ticket-info .ticket-item .desc {
+  font-size: 26rpx;
+  color: #666;
+}
+.scenic-detail-container .section .review-list .review-item {
+  margin-bottom: 30rpx;
+}
+.scenic-detail-container .section .review-list .review-item .user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.scenic-detail-container .section .review-list .review-item .user-info image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  margin-right: 10rpx;
+}
+.scenic-detail-container .section .review-list .review-item .user-info .nickname {
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+}
+.scenic-detail-container .section .review-list .review-item .user-info .score {
+  font-size: 28rpx;
+  color: #ff4d4f;
+}
+.scenic-detail-container .section .review-list .review-item .content {
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+.scenic-detail-container .section .review-list .review-item .images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5rpx;
+  margin-bottom: 10rpx;
+}
+.scenic-detail-container .section .review-list .review-item .images image {
+  width: calc(33.33% - 10rpx);
+  height: 200rpx;
+  margin: 5rpx;
+  border-radius: 8rpx;
+}
+.scenic-detail-container .section .review-list .review-item .time {
+  font-size: 24rpx;
+  color: #999;
+}
+.scenic-detail-container .bottom-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+  box-shadow: 0 -2rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+.scenic-detail-container .bottom-bar .left {
+  display: flex;
+}
+.scenic-detail-container .bottom-bar .left .action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40rpx;
+}
+.scenic-detail-container .bottom-bar .left .action-item .icon {
+  font-size: 40rpx;
+  margin-bottom: 4rpx;
+}
+.scenic-detail-container .bottom-bar .left .action-item text {
+  font-size: 24rpx;
+  color: #666;
+}
+.scenic-detail-container .bottom-bar .right button {
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+.scenic-detail-container .write-review-btn {
+  margin-top: 30rpx;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #f5f5f5;
+  color: #666;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+}
